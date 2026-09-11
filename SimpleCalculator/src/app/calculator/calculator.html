@@ -1,0 +1,33 @@
+
+<div class="calculator">
+  <div class="display">
+    <span>{{ display }}</span>
+  </div>
+
+  <div class="buttons">
+    <button class="btn function" (click)="onClearClick()">AC</button>
+    <button class="btn function" (click)="onClearEntryClick()">CE</button>
+    <button class="btn function" (click)="onBackspaceClick()">⌫</button>
+    <button class="btn operator" (click)="onOperatorClick('÷')">÷</button>
+
+    <button class="btn number" (click)="onNumberClick('7')">7</button>
+    <button class="btn number" (click)="onNumberClick('8')">8</button>
+    <button class="btn number" (click)="onNumberClick('9')">9</button>
+    <button class="btn operator" (click)="onOperatorClick('×')">×</button>
+
+    <button class="btn number" (click)="onNumberClick('4')">4</button>
+    <button class="btn number" (click)="onNumberClick('5')">5</button>
+    <button class="btn number" (click)="onNumberClick('6')">6</button>
+    <button class="btn operator" (click)="onOperatorClick('-')">−</button>
+
+    <button class="btn number" (click)="onNumberClick('1')">1</button>
+    <button class="btn number" (click)="onNumberClick('2')">2</button>
+    <button class="btn number" (click)="onNumberClick('3')">3</button>
+    <button class="btn operator" (click)="onOperatorClick('+')">+</button>
+
+    <button class="btn function" (click)="onToggleSignClick()">±</button>
+    <button class="btn number" (click)="onNumberClick('0')">0</button>
+    <button class="btn function" (click)="onDecimalClick()">.</button>
+    <button class="btn equals" (click)="onEqualsClick()">=</button>
+  </div>
+</div>
